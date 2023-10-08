@@ -9,7 +9,6 @@ const RowComponent = ({ title, fetchURL }) => {
     axios.get(fetchURL).then((res) => setMovies(res.data.results));
   }, [fetchURL]);
 
-  console.log(movies);
 
   return (
     <>
