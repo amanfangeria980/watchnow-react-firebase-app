@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Movie from "./Movie";
+import MovieCard from "./MovieCard";
 
 
 const RowComponent = ({ title, fetchURL }) => {
@@ -16,7 +16,7 @@ const RowComponent = ({ title, fetchURL }) => {
       <div className="relative flex items-center">
         <div id={"slider"}>
           {movies.map((movie, id) => (
-            <Movie movie={movie} key={id}/>
+            <MovieCard movie={movie} key={id}/>
           ))}
         </div>
       </div>

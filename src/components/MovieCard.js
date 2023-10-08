@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
-const Movie=({movie})=>{
+const MovieCard=({movie})=>{
     const [like,setLike]=useState(false);
     return(
         <>
@@ -22,4 +22,4 @@ const Movie=({movie})=>{
     )
 }
 
-export default Movie;
+export default MovieCard;
