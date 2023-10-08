@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito:wght@200;300;400;600&family=Poppins:wght@500;600;800&display=swap');
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
