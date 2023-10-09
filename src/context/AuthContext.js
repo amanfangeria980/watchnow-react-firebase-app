@@ -17,6 +17,7 @@ export function AuthContextProvider({ children }) {
 
   function signUp(email, password) {
     createUserWithEmailAndPassword(auth, email, password);
+    // this statement is creating a users document under that add an email and corresponding to that email, create a empty array to store liked movies
     setDoc(doc(db,'users',email),{
       savedShows: []
     })
