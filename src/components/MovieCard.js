@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
+import {UserAuth} from "../context/AuthContext";
+import {db} from '../firebase';
+import { arrayUnion,doc,updateDoc } from 'firebase/firestore';
+
 const MovieCard=({movie})=>{
     const [like,setLike]=useState(false);
     return(
