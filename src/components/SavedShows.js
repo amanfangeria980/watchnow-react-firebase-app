@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import {UserAuth} from "../context/AuthContext"
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight,FaRegWindowClose } from "react-icons/fa";
 import {db} from "../firebase";
 import { updateDoc, doc,onSnapshot} from "firebase/firestore";
 
@@ -23,6 +23,20 @@ const SavedShows = () => {
     onSnapshot(doc(db,'users',`${user?.email}`),(doc)=>{setMovies(doc.data()?.savedShows);
     })
   },[user?.email])
+
+  const movieRef=doc(db,'users',`${user?.email}`);
+
+  const deleteShow=async(passedId)=>{
+    try{
+      const result=movies.filter((item)=>item.id!==passedId)
+      await updateDoc(movieRef,{
+        savedShows: result,
+      })
+    }
+    catch(err){
+      console.log(err);
+    }
+  }
 
   return (
     <>
@@ -48,6 +62,7 @@ const SavedShows = () => {
                 <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
                   {movie?.title}
                 </p>
+                <p onClick={()=>deleteShow(movie.id)} className="absolute text-gray-300 top-4 right-4"><FaRegWindowClose/></p>
               </div>
             </div>
           ))}
