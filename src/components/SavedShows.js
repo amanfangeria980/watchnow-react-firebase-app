@@ -20,9 +20,8 @@ const SavedShows = () => {
   const[movies,setMovies]=useState([]);
 
   useEffect(()=>{
-    onSnapshot(doc(db,'users',`${user?.email}`,(doc)=>{
-        setMovies(doc.data()?.SavedShows);
-    }))
+    onSnapshot(doc(db,'users',`${user?.email}`),(doc)=>{setMovies(doc.data()?.savedShows);
+    })
   },[user?.email])
 
   return (
@@ -39,7 +38,7 @@ const SavedShows = () => {
           className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
         >
           {movies.map((movie, id) => (
-            <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 text-white">
+            <div key={id.toString()} className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2 text-white">
               <img
                 className="w-full h-auto block"
                 src={`https://image.tmdb.org/t/p/w500/${movie?.img}`}
