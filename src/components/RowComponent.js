@@ -1,4 +1,7 @@
-w
+import axios from "axios";
+import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const RowComponent = ({ title, fetchURL, rowId}) => {
   const [movies, setMovies] = useState([]);
