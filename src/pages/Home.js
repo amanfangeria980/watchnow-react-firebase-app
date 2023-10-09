@@ -16,3 +16,23 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+
+// Commands to deploy our app
+// -npm i  -g firebase-tools
+
+// Firebase login
+
+// -Firebase init 
+
+// -Select - hosting -configure
+
+//  -existing-build
+
+// -Set to build folder (important)
+
+// -yarn run build
+
+// Firebase deploy
