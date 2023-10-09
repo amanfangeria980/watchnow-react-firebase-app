@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {FaHeart, FaRegHeart} from 'react-icons/fa'
 import {UserAuth} from "../context/AuthContext";
 import {db} from '../firebase';
-import { arrayUnion,doc,updateDoc } from 'firebase/firestore';
+import { arrayUnion,arrayRemove,doc,updateDoc } from 'firebase/firestore';
 
 const MovieCard=({movie})=>{
     const [like,setLike]=useState(false);
@@ -11,22 +11,34 @@ const MovieCard=({movie})=>{
     // grabbing the user email from db
     const movieId=doc(db,'users',`${user?.email}`);
 
-    const savedShow=async()=>{
-      if(user?.email){
-        setLike(!like);
-        setSaved(true);
-        await updateDoc(movieId,{
-          savedShows:arrayUnion({
-            id: movie.id,
-            title: movie.title,
-            img: movie.backdrop_path
-          })
-        })
+    const savedShow = async () => {
+      if (user?.email) {
+        if (like) {
+          // Remove the movie from savedShows
+          setLike(false);
+          await updateDoc(movieId, {
+            savedShows: arrayRemove({
+              id: movie.id,
+              title: movie.title,
+              img: movie.backdrop_path,
+            }),
+          });
+        } else {
+          // Add the movie to savedShows
+          setLike(true);
+          setSaved(true);
+          await updateDoc(movieId, {
+            savedShows: arrayUnion({
+              id: movie.id,
+              title: movie.title,
+              img: movie.backdrop_path,
+            }),
+          });
+        }
+      } else {
+        alert('Please login to save a movie');
       }
-      else{
-        alert("Please login to save a movie");  
-      }
-    }
+    };
 
     return(
         <>
