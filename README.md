@@ -1,5 +1,5 @@
 ## Deployment
-▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/)◀◀◀
+▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/){:target="_blank"}◀◀◀
 
 ## Preview
 ![M1](https://i.ibb.co/HHTS4B0/m5.png)
