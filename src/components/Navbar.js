@@ -16,26 +16,26 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-4 z-[100] absolute w-full">
       <Link to="/">
-        <h1 className="text-red-600 text-4xl font-semi cursor-pointer">
-          NETFLIX
+        <h1 className="text-green-600 text-4xl font-semi cursor-pointer">
+          WATCHNOW
         </h1>
       </Link>
       {user?.email ? (
         <div>
           <Link to="/account">
-            <button className="text-white pr-4">Account</button>
+            <button className="text-gray-300 pr-4">Account</button>
           </Link>
-          <button onClick={handleLogout} className="text-white bg-red-600 px-6 py-2 rounded cursor-pointer">
+          <button onClick={handleLogout} className="text-gray-300 bg-green-600 px-6 py-2 rounded cursor-pointer">
             Log Out
           </button>
         </div>
       ) : (
         <div>
           <Link to="/login">
-            <button className="text-white pr-4">Log In</button>
+            <button className="text-gray-300 pr-4">Log In</button>
           </Link>
           <Link to="/signup">
-            <button className="text-white bg-red-600 px-6 py-2 rounded cursor-pointer">
+            <button className="text-gray-300 bg-green-600 px-6 py-2 rounded cursor-pointer">
               Sign Up
             </button>
           </Link>
