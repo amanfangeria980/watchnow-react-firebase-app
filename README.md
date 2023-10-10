@@ -2,11 +2,11 @@
 ▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/)◀◀◀
 
 ## Preview
-![M1]([https://i.ibb.co/gRnF4t1/m1.pnG)
-![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
-![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
-![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
-![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+![M1](https://i.ibb.co/gRnF4t1/m1.pnG)
+![M2](https://i.ibb.co/rHVDsCJ/m2.png)
+![M3](https://i.ibb.co/bzkTfv5/m3.png)
+![M4](https://i.ibb.co/bzkTfv5/m4.png)
+![M5](https://i.ibb.co/bzkTfv5/m5.png)
 
 
 
