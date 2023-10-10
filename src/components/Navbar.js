@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-4 z-[100] absolute w-full">
       <Link to="/">
-        <h1 className="text-green-600 text-md sm:text-3xl md:text-4xl font-semi cursor-pointer ml-3 outline">
+        <h1 className="text-green-600 text-md sm:text-3xl md:text-4xl font-semi cursor-pointer ml-3 p-1 rounded outline font-bold">
           WATCHNOW
         </h1>
       </Link>
