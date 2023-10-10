@@ -40,7 +40,7 @@ const SavedShows = () => {
 
   return (
     <>
-      <h2 className="text-white font-bold md:text-xl p-4">My Shows</h2>
+      <h2 className="text-lime-300 font-bold md:text-xl p-4">My Shows</h2>
       <div className="relative flex items-center group">
         <FaChevronLeft
           className="bg-white rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block left-0"
@@ -58,11 +58,11 @@ const SavedShows = () => {
                 src={`https://image.tmdb.org/t/p/w500/${movie?.img}`}
                 alt={movie?.title}
               />
-              <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 text-white hover:opacity-100">
+              <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 text-lime-300 hover:opacity-100">
                 <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center">
                   {movie?.title}
                 </p>
-                <p onClick={()=>deleteShow(movie.id)} className="absolute text-gray-300 top-4 right-4"><FaRegWindowClose/></p>
+                <p onClick={()=>deleteShow(movie.id)} className="absolute text-lime-300 top-4 right-4"><FaRegWindowClose/></p>
               </div>
             </div>
           ))}
