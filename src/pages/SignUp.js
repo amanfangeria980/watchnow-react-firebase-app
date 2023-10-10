@@ -18,7 +18,15 @@ const SignUp = () => {
     }
     catch(err){
       console.log(err);
-      setError(err.message);
+      setError(err.code);
+        // if (error.code === 'auth/invalid-email' || error.code === 'auth/wrong-password') {
+        //   setError('Your email or password was incorrect');
+        // } else if (error.code === 'auth/email-already-in-use') {
+        //   setError('An account with this email already exists');
+        // } else {
+        //   setError('There was a problem with your request');
+        // }
+
     }
   }
 
