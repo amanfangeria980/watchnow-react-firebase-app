@@ -6,15 +6,19 @@ const SignUp = () => {
   const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
   const {user,signUp}=UserAuth();
+  const [error,setError]=useState('');
   const navigate=useNavigate();
+
   const handleSubmit=async (e)=>{
     e.preventDefault();
+    setError('');
     try{
       await signUp(email,password);
       navigate("/")
     }
     catch(err){
       console.log(err);
+      setError(err.message);
     }
   }
 
@@ -28,6 +32,7 @@ const SignUp = () => {
         <div className='max-w-[450px] h-[600px] mx-auto bg-black/75 text-green-600'>
           <div className='max-w-[320px] mx-auto py-16'>
             <h1 className='text-3xl font-bold'>Sign Up</h1>
+            {error ? <p className='p-3 bg-lime-400 my-2 text-black'>{error}</p>:null}
             <form className='w-full flex flex-col py-4' onSubmit={handleSubmit}>
               <input className="p-3 my-2 bg-gray-700 rounded " type="email" placeholder='Email' autoComplete='email' onChange={(e)=>setEmail(e.target.value)}/>
               <input className="p-3 my-2 bg-gray-700 rounded " type="password" placeholder='Password' autoComplete='current-password' onChange={(e)=>setPassword(e.target.value)}/>
