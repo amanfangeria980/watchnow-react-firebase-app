@@ -2,7 +2,7 @@
 ▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/)◀◀◀
 
 ## Preview
-![M1](https://ibb.co/gRnF4t1)
+![M1]([https://i.ibb.co/gRnF4t1/m1.pnG)
 ![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
 ![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
 ![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
