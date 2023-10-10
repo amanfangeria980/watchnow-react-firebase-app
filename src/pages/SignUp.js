@@ -19,6 +19,7 @@ const SignUp = () => {
     catch(err){
       console.log(err);
       setError(err.code);
+      navigate("/signup")
         // if (error.code === 'auth/invalid-email' || error.code === 'auth/wrong-password') {
         //   setError('Your email or password was incorrect');
         // } else if (error.code === 'auth/email-already-in-use') {
