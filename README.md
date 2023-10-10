@@ -2,11 +2,11 @@
 ▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/)◀◀◀
 
 ## Preview
-![M1](https://i.ibb.co/gRnF4t1/m1.pnG)
-![M2](https://i.ibb.co/rHVDsCJ/m2.png)
+![M1](https://i.ibb.co/HHTS4B0/m5.png)
+![M2](https://i.ibb.co/crmXY25/m1.png)
+![M3](https://i.ibb.co/rHVDsCJ/m2.png)
 ![M3](https://i.ibb.co/bzkTfv5/m3.png)
 ![M4](https://i.ibb.co/Gx2jcYG/m4.png)
-![M5](https://i.ibb.co/HHTS4B0/m5.png)
 
 
 
