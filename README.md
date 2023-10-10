@@ -1,6 +1,16 @@
 ## Deployment
 ▶▶▶[See Deployment](https://movie-site-react-tailwind.web.app/)◀◀◀
 
+## Preview
+![M1](https://ibb.co/gRnF4t1)
+![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+![M1](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
