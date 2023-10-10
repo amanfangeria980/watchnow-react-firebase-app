@@ -26,7 +26,7 @@ const SignUp = () => {
         // } else {
         //   setError('There was a problem with your request');
         // }
-
+      // Error handling not working
     }
   }
 
